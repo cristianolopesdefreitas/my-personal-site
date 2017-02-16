@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+/* custom fonts */
+@font-face {
+    font-family: 'vt323regular';
+    src: url('../fonts/vt323-regular-webfont.woff2') format('woff2'),
+         url('../fonts/vt323-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body settings */
+body {
+    background-image: url('../images/space.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'ralewayregular';
+    margin: 0;
+}
+
+/* container */
+.wrapper {
+    background: rgba(255, 255, 255, 0.9);
+    margin: 5px auto;
+    max-width: 90%;
+    padding: 20px;
+    width: 960px;
+}
+
+.wrapper section {
+    margin-top: 35px;
+}
+
+.wrapper section:first-child {
+    margin: 0;
+}
+
+/* titles */
+.primary-title,
+.secondary-title {
+    font-family: 'vt323regular';
+}
+
+.primary-title {
+    color: #000;
+    margin: 0;
+    text-align: center;
+}
+
+.primary-title::before {
+    content: '<';
+}
+
+.primary-title::after {
+    content: ' />';
+}
+
+.secondary-title {
+    margin: 0 auto 20px;
+}
+
+.secondary-title::before {
+    content: '# ';
+}
+
+.primary-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* list certification */
+.list-certification {
+    margin: 0;
+}
+
+.list-certification__title {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.list-certification__value {
+    display: inline;
+    margin-left: 5px;
+}
+
+.list-certification__value::after {
+    content: '';
+    display: block;
+}
+
+/* skill list */
+.skill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill-list__item {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px 1px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+
+.skill-list__item:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* contacts */
+.contact-list {
+    margin: 0;
+}
+
+.contact-list__title {
+    font-weight: bold;
+}
+
+.contact-list__value {
+    display: block;
+    margin: 10px;
+}
+
+.contact-list__value a {
+    color: #0090FF;
+    text-decoration: none;
+}
+
+.contact-list__value a:hover {
+    text-decoration: underline;
+}
+
+/* animations */
+.enterprise,
+.millennium-falcon {
+    animation-delay: 5s;
+    animation-direction: normal;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    height: 30%;
+    max-height: 30%;
+    position: fixed;
+    width: auto;
+    z-index: -1;
+}
+
+.enterprise {
+    animation-name: enterprise;
+}
+
+.millennium-falcon {
+    animation-name: millennium-falcon;
+}
+
+@keyframes enterprise {
+    0% {
+        right: 100%;
+        top: 100%;
+    }
+
+    80% {
+        right: 50%;
+        top: 50%;
+    }
+
+    100% {
+        right: -100%;
+        top: -100%;
+    }
+}
+
+@keyframes millennium-falcon {
+    0% {
+        right: -100%;
+        top: -100%;
+    }
+
+    80% {
+        right: 50%;
+        top: 50%;
+    }
+
+    100% {
+        right: 100%;
+        top: 100%;
+    }
+}
+
+/* helpers */
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
