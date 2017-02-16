@@ -161,15 +161,16 @@ body {
     max-height: 30%;
     position: fixed;
     width: auto;
-    z-index: -1;
 }
 
 .enterprise {
     animation-name: enterprise;
+    z-index: -1;
 }
 
 .millennium-falcon {
     animation-name: millennium-falcon;
+    z-index: -2;
 }
 
 @keyframes enterprise {
