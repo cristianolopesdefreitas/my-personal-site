@@ -114,7 +114,7 @@ body {
     border: 1px solid #000;
     border-radius: 20px;
     display: inline-block;
-    margin: 5px 1px;
+    margin: 5px 2px;
     padding: 5px 10px;
     transition: .5s;
 }
