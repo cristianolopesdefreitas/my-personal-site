@@ -30,12 +30,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'ralewayregular';
+    color: #fff;
     margin: 0;
 }
 
 /* container */
 .wrapper {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     margin: 5px auto;
     max-width: 90%;
     padding: 20px;
@@ -57,7 +58,6 @@ body {
 }
 
 .primary-title {
-    color: #000;
     margin: 0;
     text-align: center;
 }
@@ -79,7 +79,7 @@ body {
 }
 
 .primary-title a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -112,11 +112,14 @@ body {
 
 .skill-list__item {
     background: #fff;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     border-radius: 20px;
+    color: #000;
+    cursor: default;
     display: inline-block;
     margin: 5px 2px;
     padding: 5px 10px;
+    text-shadow: none;
     transition: .5s;
 }
 
