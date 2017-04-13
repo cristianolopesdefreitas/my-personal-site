@@ -32,7 +32,6 @@ body {
 body::before {
     background-image: url('../images/space.jpg');
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
     bottom: 0;
     content: '';
@@ -42,7 +41,7 @@ body::before {
     right: 0;
     top: 0;
     width: 100%;
-    will-change: transform;
+    will-change: auto;
     z-index: -2;
 }
 
