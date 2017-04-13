@@ -24,14 +24,26 @@
 
 /* body settings */
 body {
-    background-image: url('../images/space.jpg');
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'ralewayregular';
     color: #fff;
     margin: 0;
+}
+
+body::before {
+    background-image: url('../images/space.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -2;
 }
 
 /* container */
